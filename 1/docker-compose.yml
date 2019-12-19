@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  appversion: "3"
+
+services:
+  node:
+    container_name: docker-node
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 3000:3000
